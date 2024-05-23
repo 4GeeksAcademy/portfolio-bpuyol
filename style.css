@@ -1,17 +1,18 @@
 /* styles.css */
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: #f4f4f9;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
   color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 header {
-  background: #009688;
+  background-color: #00796b;
   color: #fff;
-  padding: 20px 0;
+  padding: 2rem 0;
   text-align: center;
 }
 
@@ -21,102 +22,114 @@ header h1 {
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 1.5rem;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #b2dfdb;
 }
 
 main {
-  padding: 20px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 3rem;
 }
 
 section h2 {
-  border-bottom: 2px solid #009688;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  border-bottom: 2px solid #00796b;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.8rem;
 }
 
 p {
-  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 #photo-image {
   border-radius: 50%;
   display: block;
-  margin: 20px auto;
+  margin: 2rem auto;
+  transition: transform 0.3s ease;
+}
+
+#photo-image:hover {
+  transform: scale(1.05);
 }
 
 button {
-  background: #009688;
+  background-color: #00796b;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background: #00796b;
+  background-color: #004d40;
 }
 
 aside {
-  background: #fff;
-  padding: 20px;
+  background-color: #fff;
+  padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 aside header h3 {
   margin-top: 0;
+  color: #00796b;
 }
 
 footer {
-  background: #009688;
+  background-color: #00796b;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+  padding: 2rem 0;
+  margin-top: 3rem;
 }
 
 footer a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  color: #b2dfdb;
 }
 
 fieldset {
-  border: 1px solid #009688;
-  padding: 20px;
+  border: 1px solid #00796b;
+  padding: 2rem;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 legend {
-  color: #009688;
+  color: #00796b;
   font-weight: bold;
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 input[type="text"],
@@ -125,8 +138,8 @@ input[type="tel"],
 textarea,
 select {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 1rem;
+  margin-top: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
@@ -137,5 +150,11 @@ details summary {
 }
 
 details p {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
+
+article {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box
